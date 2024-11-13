@@ -76,9 +76,9 @@ async def account_login(bot: Client, m: Message):
                 [
                     InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/Sonickuwalupdate") ],
                     [
-                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/Chatkanhabot") ],
+                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/KanhaContentbot") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/Chatkanhabot") ]                               
+                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/KanhaContentbot") ]                               
             ]))
 
 
@@ -179,7 +179,7 @@ async def account_login(bot: Client, m: Message):
     try:
         for i in range(count - 1, len(links)):
 
-            V = links[i][1].replace("file/d/","uc?export=download&id=").replace("www.youtube-nocookie.com/embed", "youtu.be").replace("?modestbranding=1", "").replace("/view?usp=sharing","") # .replace("mpd","m3u8")
+            V = links[i][1].replace("file/d/","uc?export=download&id=").replace("www.youtube-nocookie.com/embed", "youtu.be").replace("www.youtube.com/live", "youtu.be").replace("www.youtube.com/embed", "youtu.be").replace("?modestbranding=1", "").replace("/view?usp=sharing","").replace("d3nzo6itypaz07", "d26g5bnklkwsh4").replace("dn6x93wafba93", "d26g5bnklkwsh4").replace("d2tiz86clzieqa", "d26g5bnklkwsh4").replace("edge.api.brightcove.com", "d3igdi2k1ohuql.cloudfront.net").replace("vod.teachx.in", "d3igdi2k1ohuql.cloudfront.net").replace("downloadappx.appx.co.in", "d33g7sdvsfd029.cloudfront.net").replace("mpd","m3u8")
             url = "https://" + V
 
             if "visionias" in url:
@@ -209,7 +209,6 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                
                 cc = f'**[ 🎥 ] Vid_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
                 cc1 = f'**[ 📁 ] Pdf_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
                 if "drive" in url:
