@@ -50,6 +50,7 @@ async def stop_bot():
     await bot.stop()
 
 async def main():
+    if WEBHOOK:
         # Start the web server
         app_runner = web.AppRunner(await web_server())
         await app_runner.setup()
@@ -58,7 +59,7 @@ async def main():
         print(f"Web server started on port {PORT}")
 
     # Start the bot
-    
+    await start_bot()
 
     # Keep the program running
     try:
