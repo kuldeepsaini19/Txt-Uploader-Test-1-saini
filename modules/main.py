@@ -71,14 +71,14 @@ async def main():
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n ▂▃▅▇█▓▒░ ❤️ 𝐈𝐏𝐒 𝐋𝐎𝐕𝐄𝐑'𝐒🌈™ ❤️ ░▒▓█▇▅▃▂ \n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /txt Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n ▂▃▅▇█▓▒░ 🐦‍🔥 𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥 ░▒▓█▇▅▃▂ \n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /txt Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/Sonickuwalupdate") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/+PM4PwsDbrBE2ZDc1") ],
                     [
-                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/KanhaContentbot") ],
+                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/+PM4PwsDbrBE2ZDc1") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/KanhaContentbot") ]                               
+                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/+PM4PwsDbrBE2ZDc1") ]                               
             ]))
 
 
@@ -209,8 +209,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'**[ 🎥 ] Vid_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
-                cc1 = f'**[ 📁 ] Pdf_ID: 💖 @KanhaContentbot ❤️ ** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
+                cc = f'[ 🎥 ] Lᴇᴄ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『𝐓ᴀʀᴀɪɴ™🥷🐦‍🔥』mkv\n\n📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ » {raw_text0} \n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}'
+                cc1 = f'[ 📁 ] Pᴅғ ɪᴅ. »  {str(count).zfill(3)}. \n🔰 Tɪᴛᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}『𝐓ᴀʀᴀɪɴ™🥷🐦‍🔥』pdf \n\n📲 𝐁ᴀᴛᴄʜ 𝐍ᴀᴍᴇ »{raw_text0} \n📛 𝗗ᴏᴡɴʟᴏᴀᴅᴇᴅ 𝗕ʏ » {MR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -225,12 +225,12 @@ async def account_login(bot: Client, m: Message):
                 
                 elif ".pdf" in url:
                     try:
-                        cmd = f'yt-dlp -o "💖 @KanhaContentbot ❤️{name}.pdf" "{url}"'
+                        cmd = f'yt-dlp -o "🐦‍🔥 𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥{name}.pdf" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        copy = await bot.send_document(chat_id=m.chat.id, document=f'💖 @KanhaContentbot ❤️{name}.pdf', caption=cc1)
+                        copy = await bot.send_document(chat_id=m.chat.id, document=f'🐦‍🔥 𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥{name}.pdf', caption=cc1)
                         count += 1
-                        os.remove(f'💖 @KanhaContentbot ❤️{name}.pdf')
+                        os.remove(f'🐦‍🔥 𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥{name}.pdf')
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
